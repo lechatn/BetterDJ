@@ -1,0 +1,86 @@
+section.data{
+  font-family: var(--font-family-3);
+  display: flex;
+  width : 100%;
+  height: 50vh;
+  align-items: center;
+  text-align: center;
+
+  div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    div.title{
+      font-family: var(--font-family-3);
+      font-size: 48px;
+      margin: 0 auto;
+      font-style: normal;
+      font-weight: bolder;
+      line-height: normal;
+      color: var(--main-black);
+      text-transform: uppercase;
+    }
+
+    div.stats{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            h3{
+              font-family: 'Helvetica Neue LT Std 83 Heavy Extended', sans-serif ;
+              margin: 0;
+              font-size: 96px;
+              font-style: normal;
+              font-weight: bolder;
+              line-height: normal;
+              background : linear-gradient(101deg, #42047E 0%, #45057D 3%, #5A1077 18%, #90296D 34%, #B1395A 64%, #EA5459 98%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
+            p{
+              margin: 0;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: bold;
+              line-height: normal;
+            }
+        }
+    }
+  }
+
+  @media (max-width: 1024px){
+
+  }
+
+  @media (max-width: 768px){
+    margin-top: 0;
+    div.content{
+      div.title{
+        font-size: 30px;
+      }
+      div.stats{
+        display: flex;
+        flex-direction: column;
+        div{
+          h3{
+            font-size: 40px;
+          }
+          p{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

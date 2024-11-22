@@ -1,0 +1,45 @@
+section.header{
+  div.container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+
+
+    div.menu{
+      display: flex;
+      gap: 80px;
+
+      a{
+        display: flex;
+        color: var(--main-white);
+        font-size: 24px;
+        font-weight: 750;
+        word-wrap: break-word;
+      }
+
+    }
+
+    img{
+      margin-left: 12.5%;
+    }
+  }
+
+  @media (max-width: 768px){
+    div.container{
+      width: 50%;
+      div.menu{
+        gap: 28px;
+        a{
+          font-size: 13px;
+        }
+      }
+      img{
+        margin : 0;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,30 @@
+<section class="faq">
+  <div class="presentation">
+    <strong><h1>QUESTIONS <br> FREQUENTES</h1></strong>
+    <h5>VOUS AVEZ D'AUTRES QUESTIONS ?</h5>
+    <p>CONTACTEZ-NOUS GRÂCE AU FORMULAIRE</p>
+    <button class="disco-border"><a href="#contact">Se rendre au formulaire</a></button>
+  </div>
+
+  <div class="questions">
+    @for (content of FAQContent; track content.id) {
+      <div class="question-line" (click)="openContent(content.id)">
+        <p>{{content.title}}</p>
+        <p class="plus">+</p>
+      </div>
+
+      @if (content.open) {
+        <div class="content">
+          <p>{{content.content}}</p>
+        </div>
+      }
+<!--      if this is not the last of loop :-->
+      @if (content.title != FAQContent[FAQContent.length - 1].title) {
+        <div class="line"></div>
+      }
+    }
+  </div>
+</section>
+
+
+

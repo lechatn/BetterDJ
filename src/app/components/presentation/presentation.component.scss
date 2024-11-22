@@ -1,0 +1,123 @@
+section.presentation {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(101deg, #42047E 0%, #45057D 3%, #5A1077 18%, #90296D 34%, #B1395A 64%, #EA5459 98%);
+
+  div.container {
+    display: flex;
+    div.left{
+      display: flex;
+      flex-direction: column;
+      width: 66%;
+      margin-top: 20%;
+
+      p{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding: 10px 0;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        color: var(--main-white);
+      }
+      div.button{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin-top: 5%;
+      }
+      #btn1{
+        color: var(--main-salmon);
+        width: 343px;
+        height: 54px;
+        background: var(--main-white);
+        border-radius: 32.5px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+    div.right{
+      width: 34%;
+      margin-top: 12%;
+      img{
+        transform: rotate(2.02deg);
+        transform: translateX(-100px);
+      }
+    }
+  }
+
+  a.arrow{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  @media (max-width: 1440px){
+    div.container{
+      div.left{
+        p{
+          font-size: 64px;
+        }
+        div.button{
+          #btn1{
+            width: 300px;
+            height: 48px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px){
+    div.container{
+      display: flex;
+      flex-direction: column;
+      div.left{
+        p{
+          font-size: 48px;
+        }
+        div.button{
+          #btn1{
+            width: 250px;
+            height: 40px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+      div.container{
+        display: flex;
+        flex-direction: column;
+        div.left{
+          text-align: center;
+          p {
+            font-size: 20px;
+          }
+        }
+        div.right{
+          margin: 0;
+          margin-left: -13%;
+        }
+        div.button{
+          #btn2{
+            margin-left: 12%;
+          }
+        }
+      }
+      a.arrow{
+        display: none;
+      }
+  }
+}
+
+

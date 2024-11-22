@@ -1,0 +1,135 @@
+section.contact{
+  color: var(--main-white);
+  background: linear-gradient(to right, #EA5459, #42047E);
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-family-3);
+
+  div.content{
+    margin-left: 10%;
+    margin-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+
+    #nom, #mail, #prenom{
+      width: 125%;
+      height: 30px;
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+    }
+
+    #message{
+      width: 125%;
+      height: 200px;
+      text-decoration: none;
+      border: none;
+      border-radius: 10px;
+
+    }
+
+    h1{
+      margin-bottom: 3%;
+      font-size: 75px;
+    }
+
+    #btn{
+      margin-top: 2rem;
+    }
+  }
+
+  div.event{
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      scale: 1.4;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    div.content{
+      h1 {
+        font-size: 48px;
+      }
+    }
+    div.event{
+      width: 55%;
+      img {
+
+      }
+    }
+  }
+
+  @media (max-width: 1280px){
+    div.content{
+      width: 100%;
+      justify-content: center;
+      position: relative;
+      align-items: center;
+
+      #nom, #mail, #prenom{
+        width: 100%;
+      }
+      #message{
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 64px;
+      }
+    }
+    div.event{
+      display: none;
+      }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    div.content{
+      margin-left: 5%;
+      margin-right: 5%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 80%;
+
+      #nom, #mail, #prenom{
+        width: 100%;
+        height: 30px;
+        text-decoration: none;
+        border: none;
+        border-radius: 50px;
+      }
+
+      #message{
+        width: 100%;
+        height: 200px;
+        text-decoration: none;
+        border: none;
+        border-radius: 10px;
+
+      }
+
+      h1{
+        margin-bottom: 3%;
+        font-size: 50px;
+      }
+
+      #btn{
+        margin-top: 2rem;
+      }
+    }
+
+    div.event{
+      display: none;
+    }
+  }
+}
+

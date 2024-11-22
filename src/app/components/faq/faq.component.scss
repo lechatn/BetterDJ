@@ -1,0 +1,119 @@
+section.faq{
+
+    display: flex;
+    margin-left: 10%;
+    margin-right: 5%;
+    justify-content: space-between;
+    margin-top: 5rem;
+
+
+  div.presentation{
+    h1{
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--main-black);
+      margin-bottom: 50px;
+      font-family: var(--font-family-3)
+    }
+
+    button.disco-border {
+      color: black;
+      margin-top: 4rem;
+    }
+
+    p{
+      font-size: 15px;
+      line-height: 18px;
+      color: var(--main-black);
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    h5{
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--main-black);
+      margin-top: 50px;
+      font-family: var(--font-family-3);
+      margin-bottom: 0;
+      line-height: 15px;
+    }
+
+  }
+
+  div.questions{
+    background: linear-gradient(to top right, #1D1F1F, #1C0235);
+    color: var(--main-white);
+    border-radius: 55.31px;
+    width: 725px;
+    padding: 20px 90px;
+
+    p {
+      font-size: 18px;
+      font-weight : 750;
+      text-transform: uppercase;
+      font-family: var(--font-family-3);
+    }
+    div.line{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 1px;
+      background-color: var(--main-white);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    div.question-line{
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+
+      .plus{
+        font-weight: 750;
+        font-size: 30.52px;
+      }
+    }
+
+  }
+  @media (max-width: 1440px) {
+    div.questions {
+      width: 600px;
+      padding: 20px 70px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    div.questions {
+      width: 500px;
+      padding: 30px 50px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    div.presentation{
+      text-align: center;
+      h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      button.disco-border {
+        margin-left: 5%;
+      }
+    }
+    div.questions{
+      text-align: center;
+      margin-top: 20%;
+      margin-left: 8%;
+      width: 50%;
+      p{
+        font-size: 15px;
+      }
+    }
+  }
+}
+
